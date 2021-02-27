@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h4>harry_675</h4>
+        <audio src="./audio/button1.mp3" id="audio" autoplay="false"></audio>
+        <form name="form" >
+            <input class="textview" name="textview">            
+        </form>
+        <table>
+            <tr>
+                <td><input class="button play-sound" type="button" onclick="clean(),playsound()" value="C"></td>
+                <td><input class="button play-sound" type="button" onclick="back(),playsound()" value="<"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('/'),playsound()" value="/"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('*'),playsound()" value="x"></td>
+            </tr>
+            <tr>
+                <td><input class="button play-sound" type="button" onclick="insert('7'),playsound()" value="7"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('8'),playsound()" value="8"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('9'),playsound()"  value="9"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('-'),playsound()"  value="-"></td>
+            </tr>
+            <tr>
+                <td><input class="button play-sound" type="button" onclick="insert('4'),playsound()"  value="4"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('5'),playsound()"  value="5"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('6'),playsound()"  value="6"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('+'),playsound()"  value="+"></td>
+            </tr>
+            <tr>
+                <td><input class="button play-sound" type="button" onclick="insert('1'),playsound()"  value="1"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('2'),playsound()"  value="2"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('3'),playsound()"  value="3"></td>
+                <td rowspan="2"><input class="button play-sound" style="height: 105px;" type="button" onclick="playsound(),equal()"  value="="></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="button play-sound" style="width: 96%;" type="button" onclick="insert('0'),playsound()" value="0"></td>
+                <td><input class="button play-sound" type="button" onclick="insert('.'),playsound()" value="."></td>
+
+            </tr>
+        </table>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
